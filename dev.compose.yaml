@@ -1,0 +1,32 @@
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: user_management_db
+    volumes:
+      - mongo-data-dev:/data/db
+
+  api:
+    image: express-ts-api:v1.0.0-dev
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    container_name: user_management_api
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      MONGODB_URI: mongodb://root:example@mongo:27017/user_management_db?authSource=admin
+    depends_on:
+      - mongo
+
+volumes:
+  mongo-data-dev:

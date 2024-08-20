@@ -9,7 +9,7 @@ here are the `curl` commands for the POST, GET, PUT, and DELETE operations based
 
 #### Create a new user (1)
 ```sh
-curl -X POST http://panchanandevops.com:80/users \
+curl -X POST http://localhost:3000/users \
 -H "Content-Type: application/json" \
 -d '{
   "name": "John Doe",
@@ -20,7 +20,7 @@ curl -X POST http://panchanandevops.com:80/users \
 
 #### Create a new user (2)
 ```sh
-curl -X POST http://panchanandevops.com:80/users \
+curl -X POST http://localhost:3000/users \
 -H "Content-Type: application/json" \
 -d '{
   "name": "Jane Doe",
@@ -31,7 +31,7 @@ curl -X POST http://panchanandevops.com:80/users \
 
 #### Create a new user (3)
 ```sh
-curl -X POST http://panchanandevops.com:80/users \
+curl -X POST http://localhost:3000/users \
 -H "Content-Type: application/json" \
 -d '{
   "name": "Alice Smith",
@@ -44,13 +44,13 @@ curl -X POST http://panchanandevops.com:80/users \
 
 #### Get all users
 ```sh
-curl -X GET http://panchanandevops.com:80/users
+curl -X GET http://localhost:3000/users
 ```
 
 #### Get a user by ID
 Replace `USER_ID` with the actual ID of the user.
 ```sh
-curl -X GET http://panchanandevops.com:80/users/66ade1b0466f568e39da0a43
+curl -X GET http://localhost:3000/users/66ade1b0466f568e39da0a43
 ```
 
 ### 3. PUT Requests
@@ -58,7 +58,7 @@ curl -X GET http://panchanandevops.com:80/users/66ade1b0466f568e39da0a43
 #### Update a user by ID
 Replace `USER_ID` with the actual ID of the user.
 ```sh
-curl -X PUT http://panchanandevops.com:80/users/66ade1b0466f568e39da0a43 \
+curl -X PUT http://localhost:3000/users/66ade1b0466f568e39da0a43 \
 -H "Content-Type: application/json" \
 -d '{
   "name": "Updated Name",
@@ -72,9 +72,9 @@ curl -X PUT http://panchanandevops.com:80/users/66ade1b0466f568e39da0a43 \
 #### Delete a user by ID
 Replace `USER_ID` with the actual ID of the user.
 ```sh
-curl -X DELETE http://panchanandevops.com:80/users/66ade1b0466f568e39da0a43
+curl -X DELETE http://localhost:3000/users/66ade1b0466f568e39da0a43
 ```
 
-These commands assume that your server is running on `panchanandevops.com` on port `80`. If your server is running on a different port or host, make sure to adjust the URL accordingly.
+These commands assume that your server is running on `localhost` on port `3000`. If your server is running on a different port or host, make sure to adjust the URL accordingly.
 
 
