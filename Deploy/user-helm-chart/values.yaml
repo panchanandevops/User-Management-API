@@ -1,0 +1,72 @@
+commonLabel: user-management-api
+
+namespace:
+  name: dev
+
+extraLabels:
+  environment: dev
+  team: backend
+
+deployment:
+  name: api-deployment
+  replicas: 2
+  container:
+    name: user-management-api
+    port: 3000
+    image: panchanandevops/express-ts-api:v1.0.0
+    resources:
+      limits:
+        memory: "512Mi"
+        cpu: "500m"
+      requests:
+        memory: "256Mi"
+        cpu: "250m"
+
+apiService:
+  name: api-service
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: true
+  name: api-ingress
+  className: nginx
+  host: panchanandevops.com
+
+configmap:
+  name: api-config
+  data:
+    PORT: "3000"
+
+secret:
+  name: mongo-secret
+  stringData:
+    mongo_root_username: root
+    mongo_root_password: example
+    mongo_initdb_database: user_management_db
+    MONGODB_URI: mongodb://root:example@mongo-0.mongo-headless.dev.svc.cluster.local:27017/user_management_db?authSource=admin
+
+statefulset:
+  name: mongo
+  applabel: mongo
+  replicas: 1
+  container:
+    name: mongo
+    port: 27017
+    image: mongo:latest
+  volumes:
+    name: mongo-volume
+
+dbService:
+  name: mongo-headless
+  port: 27017
+
+pv:
+  name: mongo-pv
+  storage: 1Gi
+  local:
+    path: /storage/data
+
+pvc:
+  name: mongo-pvc
+  storage: 1Gi

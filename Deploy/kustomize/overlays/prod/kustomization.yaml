@@ -1,0 +1,25 @@
+namespace: prod
+namePrefix: prod-
+resources:
+  - ../../base
+  - 7-api-ingress.yaml
+patches:
+  - target:
+      version: v1
+      kind: Secret
+      name: mongo-secret
+    path: patch-secret.yaml
+  - target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: api-deployment
+    path: patch-resources.yaml
+  - target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: api-deployment
+    path: patch-replicas.yaml
+commonLabels:
+  environment: prod

@@ -17,6 +17,7 @@ spec:
       containers:
         - name: mongo
           image: mongo:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
           args: ["--dbpath", "/data/db"]

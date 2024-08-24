@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ .Values.statefulset.name }}
+  namespace: {{ .Values.namespace.name | default .Release.Namespace }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Values.statefulset.applabel }}
+  serviceName: {{ .Values.dbService.name }}
+  replicas: {{ .Values.statefulset.replicas }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.statefulset.applabel }}
+    spec:
+      containers:
+        - name: {{ .Values.statefulset.container.name }}
+          image: {{ .Values.statefulset.container.image }}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: {{ .Values.statefulset.container.port }}
+          args: ["--dbpath", "/data/db"]
+          env:
+            - name: MONGO_INITDB_ROOT_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}-{{ .Values.secret.name }}
+                  key: mongo_root_username
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}-{{ .Values.secret.name }}
+                  key: mongo_root_password
+            - name: MONGO_INITDB_DATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}-{{ .Values.secret.name }}
+                  key: mongo_initdb_database
+          volumeMounts:
+            - mountPath: /data/db
+              name: {{ .Values.statefulset.volumes.name }}
+      volumes:
+        - name: {{ .Values.statefulset.volumes.name }}
+          persistentVolumeClaim:
+            claimName: {{ .Release.Name }}-{{ .Values.pvc.name }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.dbService.name }}
+  namespace: {{ .Values.namespace.name | default .Release.Namespace }}
+spec:
+  ports:
+    - port: {{ .Values.dbService.port }}
+      targetPort: {{ .Values.statefulset.container.port }}
+  clusterIP: None
+  selector:
+    app: {{ .Values.statefulset.applabel }}

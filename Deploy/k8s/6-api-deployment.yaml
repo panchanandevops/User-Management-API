@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api
+  name: api-deployment
   namespace: dev
   labels:
     app: api
@@ -18,6 +18,7 @@ spec:
       containers:
         - name: user-management-api
           image: panchanandevops/express-ts-api:v1.0.0
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
           env:
@@ -33,11 +34,11 @@ spec:
                   key: PORT
           resources:
             limits:
-              memory: "512Mi"
-              cpu: "500m"
+              memory: "128Mi"
+              cpu: "100m"
             requests:
-              memory: "256Mi"
-              cpu: "250m"
+              memory: "64Mi"
+              cpu: "50m"
 
 ---
 apiVersion: v1

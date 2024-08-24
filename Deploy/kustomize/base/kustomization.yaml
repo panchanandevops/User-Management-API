@@ -1,0 +1,8 @@
+resources:
+  - 0-pv.yaml
+  - 1-namespace.yaml
+  - 2-configMap.yaml
+  - 3-mongo-secret.yaml
+  - 4-pvc.yaml
+  - 5-statefulSet.yaml
+  - 6-api-deployment.yaml
