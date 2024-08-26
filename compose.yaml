@@ -16,7 +16,7 @@ services:
     image: panchanandevops/express-ts-api:v1.0.0
     build:
       context: ./backend
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.prod
     container_name: user_management_api
     ports:
       - "3000:3000"
