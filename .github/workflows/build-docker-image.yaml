@@ -41,7 +41,7 @@ jobs:
       - name: Build and push User API Docker image
         uses: docker/build-push-action@v6
         with:
-          context: . 
+          context: ./backend 
           file: ./backend/Dockerfile.prod 
           push: true
           tags: ${{ steps.meta.outputs.tags }}
