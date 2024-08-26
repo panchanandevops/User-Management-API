@@ -41,7 +41,7 @@ jobs:
       - name: Build and push User API Docker image
         uses: docker/build-push-action@v6
         with:
-          context: . # Set the context to the root directory
+          context: ./backend # Set the context to the root directory
           file: Dockerfile # Set the Dockerfile path to Dockerfile in the root directory
           push: true
           tags: ${{ steps.meta.outputs.tags }}
