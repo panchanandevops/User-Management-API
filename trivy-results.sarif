@@ -265,13 +265,13 @@
         }
       },
       "properties": {
-        "imageID": "sha256:38c10925ce9d8758d66fbb610adec3273264b20cbf3508f928034657749be736",
-        "imageName": "panchanandevops/express-ts-api:api-v2.1.4",
+        "imageID": "sha256:7b9fd061d296fe4fa2fde8d6660df6f9a072facaf2ed2c9fea90e41bd6de5a56",
+        "imageName": "panchanandevops/express-ts-api:v3.0.0",
         "repoDigests": [
-          "panchanandevops/express-ts-api@sha256:e9a1c4239a96e15d3e3f4b65187bd3142250cd3a5e9e707ac3baf81a86c8780a"
+          "panchanandevops/express-ts-api@sha256:278dc279107f7129f617e56f7349dbdee1c4696215719b2d2b68ad8a64a5cd8c"
         ],
         "repoTags": [
-          "panchanandevops/express-ts-api:api-v2.1.4"
+          "panchanandevops/express-ts-api:v3.0.0"
         ]
       }
     }
