@@ -8,11 +8,256 @@
           "fullName": "Trivy Vulnerability Scanner",
           "informationUri": "https://github.com/aquasecurity/trivy",
           "name": "Trivy",
-          "rules": [],
+          "rules": [
+            {
+              "id": "CVE-2023-50387",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "bind9: KeyTrap - Extreme CPU consumption in DNSSEC validator"
+              },
+              "fullDescription": {
+                "text": "Certain DNSSEC aspects of the DNS protocol (in RFC 4033, 4034, 4035, 6840, and related RFCs) allow remote attackers to cause a denial of service (CPU consumption) via one or more DNSSEC responses, aka the \u0026#34;KeyTrap\u0026#34; issue. One of the concerns is that, when there is a zone with many DNSKEY and RRSIG records, the protocol specification implies that an algorithm must evaluate all combinations of DNSKEY and RRSIG records."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-50387",
+              "help": {
+                "text": "Vulnerability CVE-2023-50387\nSeverity: HIGH\nPackage: libudev1\nFixed Version: 247.3-7+deb11u6\nLink: [CVE-2023-50387](https://avd.aquasec.com/nvd/cve-2023-50387)\nCertain DNSSEC aspects of the DNS protocol (in RFC 4033, 4034, 4035, 6840, and related RFCs) allow remote attackers to cause a denial of service (CPU consumption) via one or more DNSSEC responses, aka the \"KeyTrap\" issue. One of the concerns is that, when there is a zone with many DNSKEY and RRSIG records, the protocol specification implies that an algorithm must evaluate all combinations of DNSKEY and RRSIG records.",
+                "markdown": "**Vulnerability CVE-2023-50387**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|libudev1|247.3-7+deb11u6|[CVE-2023-50387](https://avd.aquasec.com/nvd/cve-2023-50387)|\n\nCertain DNSSEC aspects of the DNS protocol (in RFC 4033, 4034, 4035, 6840, and related RFCs) allow remote attackers to cause a denial of service (CPU consumption) via one or more DNSSEC responses, aka the \"KeyTrap\" issue. One of the concerns is that, when there is a zone with many DNSKEY and RRSIG records, the protocol specification implies that an algorithm must evaluate all combinations of DNSKEY and RRSIG records."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-50868",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "bind9: Preparing an NSEC3 closest encloser proof can exhaust CPU resources"
+              },
+              "fullDescription": {
+                "text": "The Closest Encloser Proof aspect of the DNS protocol (in RFC 5155 when RFC 9276 guidance is skipped) allows remote attackers to cause a denial of service (CPU consumption for SHA-1 computations) via DNSSEC responses in a random subdomain attack, aka the \u0026#34;NSEC3\u0026#34; issue. The RFC 5155 specification implies that an algorithm must perform thousands of iterations of a hash function in certain situations."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-50868",
+              "help": {
+                "text": "Vulnerability CVE-2023-50868\nSeverity: HIGH\nPackage: libudev1\nFixed Version: 247.3-7+deb11u6\nLink: [CVE-2023-50868](https://avd.aquasec.com/nvd/cve-2023-50868)\nThe Closest Encloser Proof aspect of the DNS protocol (in RFC 5155 when RFC 9276 guidance is skipped) allows remote attackers to cause a denial of service (CPU consumption for SHA-1 computations) via DNSSEC responses in a random subdomain attack, aka the \"NSEC3\" issue. The RFC 5155 specification implies that an algorithm must perform thousands of iterations of a hash function in certain situations.",
+                "markdown": "**Vulnerability CVE-2023-50868**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|libudev1|247.3-7+deb11u6|[CVE-2023-50868](https://avd.aquasec.com/nvd/cve-2023-50868)|\n\nThe Closest Encloser Proof aspect of the DNS protocol (in RFC 5155 when RFC 9276 guidance is skipped) allows remote attackers to cause a denial of service (CPU consumption for SHA-1 computations) via DNSSEC responses in a random subdomain attack, aka the \"NSEC3\" issue. The RFC 5155 specification implies that an algorithm must perform thousands of iterations of a hash function in certain situations."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-7008",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "systemd-resolved: Unsigned name response in signed zone is not refused when DNSSEC=yes"
+              },
+              "fullDescription": {
+                "text": "A vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-7008",
+              "help": {
+                "text": "Vulnerability CVE-2023-7008\nSeverity: MEDIUM\nPackage: libudev1\nFixed Version: 247.3-7+deb11u6\nLink: [CVE-2023-7008](https://avd.aquasec.com/nvd/cve-2023-7008)\nA vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records.",
+                "markdown": "**Vulnerability CVE-2023-7008**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|libudev1|247.3-7+deb11u6|[CVE-2023-7008](https://avd.aquasec.com/nvd/cve-2023-7008)|\n\nA vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.9",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            }
+          ],
           "version": "0.53.0"
         }
       },
-      "results": [],
+      "results": [
+        {
+          "ruleId": "CVE-2023-50387",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "Package: libsystemd0\nInstalled Version: 247.3-7+deb11u5\nVulnerability CVE-2023-50387\nSeverity: HIGH\nFixed Version: 247.3-7+deb11u6\nLink: [CVE-2023-50387](https://avd.aquasec.com/nvd/cve-2023-50387)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: libsystemd0@247.3-7+deb11u5"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-50868",
+          "ruleIndex": 1,
+          "level": "error",
+          "message": {
+            "text": "Package: libsystemd0\nInstalled Version: 247.3-7+deb11u5\nVulnerability CVE-2023-50868\nSeverity: HIGH\nFixed Version: 247.3-7+deb11u6\nLink: [CVE-2023-50868](https://avd.aquasec.com/nvd/cve-2023-50868)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: libsystemd0@247.3-7+deb11u5"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-7008",
+          "ruleIndex": 2,
+          "level": "warning",
+          "message": {
+            "text": "Package: libsystemd0\nInstalled Version: 247.3-7+deb11u5\nVulnerability CVE-2023-7008\nSeverity: MEDIUM\nFixed Version: 247.3-7+deb11u6\nLink: [CVE-2023-7008](https://avd.aquasec.com/nvd/cve-2023-7008)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: libsystemd0@247.3-7+deb11u5"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-50387",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "Package: libudev1\nInstalled Version: 247.3-7+deb11u5\nVulnerability CVE-2023-50387\nSeverity: HIGH\nFixed Version: 247.3-7+deb11u6\nLink: [CVE-2023-50387](https://avd.aquasec.com/nvd/cve-2023-50387)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: libudev1@247.3-7+deb11u5"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-50868",
+          "ruleIndex": 1,
+          "level": "error",
+          "message": {
+            "text": "Package: libudev1\nInstalled Version: 247.3-7+deb11u5\nVulnerability CVE-2023-50868\nSeverity: HIGH\nFixed Version: 247.3-7+deb11u6\nLink: [CVE-2023-50868](https://avd.aquasec.com/nvd/cve-2023-50868)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: libudev1@247.3-7+deb11u5"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-7008",
+          "ruleIndex": 2,
+          "level": "warning",
+          "message": {
+            "text": "Package: libudev1\nInstalled Version: 247.3-7+deb11u5\nVulnerability CVE-2023-7008\nSeverity: MEDIUM\nFixed Version: 247.3-7+deb11u6\nLink: [CVE-2023-7008](https://avd.aquasec.com/nvd/cve-2023-7008)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: libudev1@247.3-7+deb11u5"
+              }
+            }
+          ]
+        }
+      ],
       "columnKind": "utf16CodeUnits",
       "originalUriBaseIds": {
         "ROOTPATH": {
@@ -20,13 +265,13 @@
         }
       },
       "properties": {
-        "imageID": "sha256:872471778043255af444834d8b628f7a108a8aa8ed208e3068166ed4d948adc7",
-        "imageName": "panchanandevops/express-ts-api:2.1.3",
+        "imageID": "sha256:38c10925ce9d8758d66fbb610adec3273264b20cbf3508f928034657749be736",
+        "imageName": "panchanandevops/express-ts-api:api-v2.1.4",
         "repoDigests": [
-          "panchanandevops/express-ts-api@sha256:03aea30e3646df577caa779760120d39f6341fec71995e898688cfea23b1b8cd"
+          "panchanandevops/express-ts-api@sha256:e9a1c4239a96e15d3e3f4b65187bd3142250cd3a5e9e707ac3baf81a86c8780a"
         ],
         "repoTags": [
-          "panchanandevops/express-ts-api:2.1.3"
+          "panchanandevops/express-ts-api:api-v2.1.4"
         ]
       }
     }
