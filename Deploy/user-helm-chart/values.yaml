@@ -13,7 +13,7 @@ deployment:
   container:
     name: user-management-api
     port: 3000
-    image: panchanandevops/express-ts-api:v3.0.0
+    image: panchanandevops/express-ts-api:api-v3.0.0
     resources:
       limits:
         memory: "512Mi"
