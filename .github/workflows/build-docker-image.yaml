@@ -36,7 +36,7 @@ jobs:
           flavor: |
             latest=false
           tags: |
-            type=raw,value=api-{{tag}}
+            type=raw,value={{tag}}
 
       - name: Build and push User API Docker image
         uses: docker/build-push-action@v6
