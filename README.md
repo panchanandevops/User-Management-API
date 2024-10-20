@@ -1,7 +1,5 @@
 # User-Management-API
 
-docker pull k8s.gcr.io/ingress-nginx/controller:v1.10.1
-minikube image load k8s.gcr.io/ingress-nginx/controller:v1.10.1
 
 here are the `curl` commands for the POST, GET, PUT, and DELETE operations based on your Express API:
 
@@ -9,7 +7,7 @@ here are the `curl` commands for the POST, GET, PUT, and DELETE operations based
 
 #### Create a new user (1)
 ```sh
-curl -X POST http://panchanandevops.com:30452/users \
+curl -X POST http://ts-api.com/users \
 -H "Content-Type: application/json" \
 -d '{
   "name": "John Doe",
@@ -20,7 +18,7 @@ curl -X POST http://panchanandevops.com:30452/users \
 
 #### Create a new user (2)
 ```sh
-curl -X POST http://panchanandevops.com:30452/users \
+curl -X POST http://ts-api.com/users \
 -H "Content-Type: application/json" \
 -d '{
   "name": "Jane Doe",
@@ -31,7 +29,7 @@ curl -X POST http://panchanandevops.com:30452/users \
 
 #### Create a new user (3)
 ```sh
-curl -X POST http://panchanandevops.com:30452/users \
+curl -X POST http://ts-api.com/users \
 -H "Content-Type: application/json" \
 -d '{
   "name": "Alice Smith",
@@ -44,13 +42,13 @@ curl -X POST http://panchanandevops.com:30452/users \
 
 #### Get all users
 ```sh
-curl -X GET http://panchanandevops.com:30452/users
+curl -X GET http://ts-api.com/users
 ```
 
 #### Get a user by ID
 Replace `USER_ID` with the actual ID of the user.
 ```sh
-curl -X GET http://panchanandevops.com:30452/users/66c63abdda7164136f89c956
+curl -X GET http://ts-api.com/users/66c63abdda7164136f89c956
 ```
 
 ### 3. PUT Requests
@@ -58,7 +56,7 @@ curl -X GET http://panchanandevops.com:30452/users/66c63abdda7164136f89c956
 #### Update a user by ID
 Replace `USER_ID` with the actual ID of the user.
 ```sh
-curl -X PUT http://panchanandevops.com:30452/users/66c63abdda7164136f89c956 \
+curl -X PUT http://ts-api.com/users/66c63abdda7164136f89c956 \
 -H "Content-Type: application/json" \
 -d '{
   "name": "Updated Name",
@@ -72,9 +70,10 @@ curl -X PUT http://panchanandevops.com:30452/users/66c63abdda7164136f89c956 \
 #### Delete a user by ID
 Replace `USER_ID` with the actual ID of the user.
 ```sh
-curl -X DELETE http://panchanandevops.com:30452/users/66c63abdda7164136f89c956
+curl -X DELETE http://ts-api.com/users/66c63abdda7164136f89c956
 ```
 
-These commands assume that your server is running on `panchanandevops.com` on port `80`. If your server is running on a different port or host, make sure to adjust the URL accordingly.
+These commands assume that your server is running on `ts-api.com` on port `80`. If your server is running on a different port or host, make sure to adjust the URL accordingly.
 
 
+curl -X DELETE http://ts-api.com/users/6714c4858641781350adcb72

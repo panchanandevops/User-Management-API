@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: user-management-api
-          image: panchanandevops/express-ts-api:v3.0.2
+          image: panchanandevops/express-ts-api:v4.0.0
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000

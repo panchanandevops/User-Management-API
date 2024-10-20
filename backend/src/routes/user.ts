@@ -17,9 +17,12 @@ router.post('/', async (req: Request, res: Response) => {
 // Get all users
 router.get('/', async (req: Request, res: Response) => {
   try {
+    console.log('Fetching all users');
     const users = await User.find();
+    console.log('Users fetched successfully:', users);
     res.status(200).send(users);
   } catch (error) {
+    console.error('Error fetching users:', error);
     res.status(500).send(error);
   }
 });
