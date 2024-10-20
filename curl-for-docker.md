@@ -1,9 +1,5 @@
 # User-Management-API
 
-docker pull k8s.gcr.io/ingress-nginx/controller:v1.10.1
-minikube image load k8s.gcr.io/ingress-nginx/controller:v1.10.1
-
-
 
 here are the `curl` commands for the POST, GET, PUT, and DELETE operations based on your Express API:
 
