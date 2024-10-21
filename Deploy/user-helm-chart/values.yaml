@@ -31,7 +31,7 @@ ingress:
   enabled: true
   name: api-ingress
   className: nginx
-  host: panchanandevops.com
+  host: ts-api.com
 
 configmap:
   name: api-config
@@ -64,8 +64,9 @@ dbService:
 pv:
   name: mongo-pv
   storage: 1Gi
-  local:
+  hostPath:
     path: /storage/data
+    type: DirectoryOrCreate
 
 pvc:
   name: mongo-pvc
