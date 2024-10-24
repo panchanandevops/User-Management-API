@@ -1,4 +1,3 @@
-
 services:
   mongo:
     image: mongo:latest
@@ -11,6 +10,8 @@ services:
       MONGO_INITDB_DATABASE: user_management_db
     volumes:
       - mongo-data:/data/db
+    networks:
+      - user_management_network
 
   api:
     image: panchanandevops/express-ts-api:v4.0.0
@@ -25,7 +26,12 @@ services:
       MONGODB_URI: mongodb://root:example@mongo:27017/user_management_db?authSource=admin
     depends_on:
       - mongo
-    
+    networks:
+      - user_management_network
 
 volumes:
   mongo-data:
+
+networks:
+  user_management_network:
+    driver: bridge
