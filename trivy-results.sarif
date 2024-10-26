@@ -1,0 +1,684 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/main/sarif-2.1/schema/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Trivy Vulnerability Scanner",
+          "informationUri": "https://github.com/aquasecurity/trivy",
+          "name": "Trivy",
+          "rules": [
+            {
+              "id": "CVE-2021-36084",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "libsepol: use-after-free in __cil_verify_classperms()"
+              },
+              "fullDescription": {
+                "text": "The CIL compiler in SELinux 3.2 has a use-after-free in __cil_verify_classperms (called from __cil_verify_classpermission and __cil_pre_verify_helper)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-36084",
+              "help": {
+                "text": "Vulnerability CVE-2021-36084\nSeverity: LOW\nPackage: libsepol1\nFixed Version: 3.1-1+deb11u1\nLink: [CVE-2021-36084](https://avd.aquasec.com/nvd/cve-2021-36084)\nThe CIL compiler in SELinux 3.2 has a use-after-free in __cil_verify_classperms (called from __cil_verify_classpermission and __cil_pre_verify_helper).",
+                "markdown": "**Vulnerability CVE-2021-36084**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|libsepol1|3.1-1+deb11u1|[CVE-2021-36084](https://avd.aquasec.com/nvd/cve-2021-36084)|\n\nThe CIL compiler in SELinux 3.2 has a use-after-free in __cil_verify_classperms (called from __cil_verify_classpermission and __cil_pre_verify_helper)."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "3.3",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-36085",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "libsepol: use-after-free in __cil_verify_classperms()"
+              },
+              "fullDescription": {
+                "text": "The CIL compiler in SELinux 3.2 has a use-after-free in __cil_verify_classperms (called from __verify_map_perm_classperms and hashtab_map)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-36085",
+              "help": {
+                "text": "Vulnerability CVE-2021-36085\nSeverity: LOW\nPackage: libsepol1\nFixed Version: 3.1-1+deb11u1\nLink: [CVE-2021-36085](https://avd.aquasec.com/nvd/cve-2021-36085)\nThe CIL compiler in SELinux 3.2 has a use-after-free in __cil_verify_classperms (called from __verify_map_perm_classperms and hashtab_map).",
+                "markdown": "**Vulnerability CVE-2021-36085**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|libsepol1|3.1-1+deb11u1|[CVE-2021-36085](https://avd.aquasec.com/nvd/cve-2021-36085)|\n\nThe CIL compiler in SELinux 3.2 has a use-after-free in __cil_verify_classperms (called from __verify_map_perm_classperms and hashtab_map)."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "3.3",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-36086",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "libsepol: use-after-free in cil_reset_classpermission()"
+              },
+              "fullDescription": {
+                "text": "The CIL compiler in SELinux 3.2 has a use-after-free in cil_reset_classpermission (called from cil_reset_classperms_set and cil_reset_classperms_list)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-36086",
+              "help": {
+                "text": "Vulnerability CVE-2021-36086\nSeverity: LOW\nPackage: libsepol1\nFixed Version: 3.1-1+deb11u1\nLink: [CVE-2021-36086](https://avd.aquasec.com/nvd/cve-2021-36086)\nThe CIL compiler in SELinux 3.2 has a use-after-free in cil_reset_classpermission (called from cil_reset_classperms_set and cil_reset_classperms_list).",
+                "markdown": "**Vulnerability CVE-2021-36086**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|libsepol1|3.1-1+deb11u1|[CVE-2021-36086](https://avd.aquasec.com/nvd/cve-2021-36086)|\n\nThe CIL compiler in SELinux 3.2 has a use-after-free in cil_reset_classpermission (called from cil_reset_classperms_set and cil_reset_classperms_list)."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "3.3",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-36087",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "libsepol: heap-based buffer overflow in ebitmap_match_any()"
+              },
+              "fullDescription": {
+                "text": "The CIL compiler in SELinux 3.2 has a heap-based buffer over-read in ebitmap_match_any (called indirectly from cil_check_neverallow). This occurs because there is sometimes a lack of checks for invalid statements in an optional block."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-36087",
+              "help": {
+                "text": "Vulnerability CVE-2021-36087\nSeverity: LOW\nPackage: libsepol1\nFixed Version: 3.1-1+deb11u1\nLink: [CVE-2021-36087](https://avd.aquasec.com/nvd/cve-2021-36087)\nThe CIL compiler in SELinux 3.2 has a heap-based buffer over-read in ebitmap_match_any (called indirectly from cil_check_neverallow). This occurs because there is sometimes a lack of checks for invalid statements in an optional block.",
+                "markdown": "**Vulnerability CVE-2021-36087**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|libsepol1|3.1-1+deb11u1|[CVE-2021-36087](https://avd.aquasec.com/nvd/cve-2021-36087)|\n\nThe CIL compiler in SELinux 3.2 has a heap-based buffer over-read in ebitmap_match_any (called indirectly from cil_check_neverallow). This occurs because there is sometimes a lack of checks for invalid statements in an optional block."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "3.3",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-16156",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "perl-CPAN: Bypass of verification of signatures in CHECKSUMS files"
+              },
+              "fullDescription": {
+                "text": "CPAN 2.28 allows Signature Verification Bypass."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2020-16156",
+              "help": {
+                "text": "Vulnerability CVE-2020-16156\nSeverity: HIGH\nPackage: perl-base\nFixed Version: 5.32.1-4+deb11u4\nLink: [CVE-2020-16156](https://avd.aquasec.com/nvd/cve-2020-16156)\nCPAN 2.28 allows Signature Verification Bypass.",
+                "markdown": "**Vulnerability CVE-2020-16156**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|perl-base|5.32.1-4+deb11u4|[CVE-2020-16156](https://avd.aquasec.com/nvd/cve-2020-16156)|\n\nCPAN 2.28 allows Signature Verification Bypass."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-31484",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "perl: CPAN.pm does not verify TLS certificates when downloading distributions over HTTPS"
+              },
+              "fullDescription": {
+                "text": "CPAN.pm before 2.35 does not verify TLS certificates when downloading distributions over HTTPS."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-31484",
+              "help": {
+                "text": "Vulnerability CVE-2023-31484\nSeverity: HIGH\nPackage: perl-base\nFixed Version: 5.32.1-4+deb11u4\nLink: [CVE-2023-31484](https://avd.aquasec.com/nvd/cve-2023-31484)\nCPAN.pm before 2.35 does not verify TLS certificates when downloading distributions over HTTPS.",
+                "markdown": "**Vulnerability CVE-2023-31484**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|perl-base|5.32.1-4+deb11u4|[CVE-2023-31484](https://avd.aquasec.com/nvd/cve-2023-31484)|\n\nCPAN.pm before 2.35 does not verify TLS certificates when downloading distributions over HTTPS."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.1",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-45590",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "body-parser: Denial of Service Vulnerability in body-parser"
+              },
+              "fullDescription": {
+                "text": "body-parser is Node.js body parsing middleware. body-parser \u0026lt;1.20.3 is vulnerable to denial of service when url encoding is enabled. A malicious actor using a specially crafted payload could flood the server with a large number of requests, resulting in denial of service. This issue is patched in 1.20.3."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-45590",
+              "help": {
+                "text": "Vulnerability CVE-2024-45590\nSeverity: HIGH\nPackage: body-parser\nFixed Version: 1.20.3\nLink: [CVE-2024-45590](https://avd.aquasec.com/nvd/cve-2024-45590)\nbody-parser is Node.js body parsing middleware. body-parser \u003c1.20.3 is vulnerable to denial of service when url encoding is enabled. A malicious actor using a specially crafted payload could flood the server with a large number of requests, resulting in denial of service. This issue is patched in 1.20.3.",
+                "markdown": "**Vulnerability CVE-2024-45590**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|body-parser|1.20.3|[CVE-2024-45590](https://avd.aquasec.com/nvd/cve-2024-45590)|\n\nbody-parser is Node.js body parsing middleware. body-parser \u003c1.20.3 is vulnerable to denial of service when url encoding is enabled. A malicious actor using a specially crafted payload could flood the server with a large number of requests, resulting in denial of service. This issue is patched in 1.20.3."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-47764",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "cookie: cookie accepts cookie name, path, and domain with out of bounds characters"
+              },
+              "fullDescription": {
+                "text": "cookie is a basic HTTP cookie parser and serializer for HTTP servers. The cookie name could be used to set other fields of the cookie, resulting in an unexpected cookie value. A similar escape can be used for path and domain, which could be abused to alter other fields of the cookie. Upgrade to 0.7.0, which updates the validation for name, path, and domain."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-47764",
+              "help": {
+                "text": "Vulnerability CVE-2024-47764\nSeverity: LOW\nPackage: cookie\nFixed Version: 0.7.0\nLink: [CVE-2024-47764](https://avd.aquasec.com/nvd/cve-2024-47764)\ncookie is a basic HTTP cookie parser and serializer for HTTP servers. The cookie name could be used to set other fields of the cookie, resulting in an unexpected cookie value. A similar escape can be used for path and domain, which could be abused to alter other fields of the cookie. Upgrade to 0.7.0, which updates the validation for name, path, and domain.",
+                "markdown": "**Vulnerability CVE-2024-47764**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|cookie|0.7.0|[CVE-2024-47764](https://avd.aquasec.com/nvd/cve-2024-47764)|\n\ncookie is a basic HTTP cookie parser and serializer for HTTP servers. The cookie name could be used to set other fields of the cookie, resulting in an unexpected cookie value. A similar escape can be used for path and domain, which could be abused to alter other fields of the cookie. Upgrade to 0.7.0, which updates the validation for name, path, and domain."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-43796",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "express: Improper Input Handling in Express Redirects"
+              },
+              "fullDescription": {
+                "text": "Express.js minimalist web framework for node. In express \u0026lt; 4.20.0, passing untrusted user input - even after sanitizing it - to response.redirect() may execute untrusted code. This issue is patched in express 4.20.0."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-43796",
+              "help": {
+                "text": "Vulnerability CVE-2024-43796\nSeverity: MEDIUM\nPackage: express\nFixed Version: 4.20.0, 5.0.0\nLink: [CVE-2024-43796](https://avd.aquasec.com/nvd/cve-2024-43796)\nExpress.js minimalist web framework for node. In express \u003c 4.20.0, passing untrusted user input - even after sanitizing it - to response.redirect() may execute untrusted code. This issue is patched in express 4.20.0.",
+                "markdown": "**Vulnerability CVE-2024-43796**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|express|4.20.0, 5.0.0|[CVE-2024-43796](https://avd.aquasec.com/nvd/cve-2024-43796)|\n\nExpress.js minimalist web framework for node. In express \u003c 4.20.0, passing untrusted user input - even after sanitizing it - to response.redirect() may execute untrusted code. This issue is patched in express 4.20.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-45296",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "path-to-regexp: Backtracking regular expressions cause ReDoS"
+              },
+              "fullDescription": {
+                "text": "path-to-regexp turns path strings into a regular expressions. In certain cases, path-to-regexp will output a regular expression that can be exploited to cause poor performance. Because JavaScript is single threaded and regex matching runs on the main thread, poor performance will block the event loop and lead to a DoS. The bad regular expression is generated any time you have two parameters within a single segment, separated by something that is not a period (.). For users of 0.1, upgrade to 0.1.10. All other users should upgrade to 8.0.0."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-45296",
+              "help": {
+                "text": "Vulnerability CVE-2024-45296\nSeverity: HIGH\nPackage: path-to-regexp\nFixed Version: 1.9.0, 0.1.10, 8.0.0, 3.3.0, 6.3.0\nLink: [CVE-2024-45296](https://avd.aquasec.com/nvd/cve-2024-45296)\npath-to-regexp turns path strings into a regular expressions. In certain cases, path-to-regexp will output a regular expression that can be exploited to cause poor performance. Because JavaScript is single threaded and regex matching runs on the main thread, poor performance will block the event loop and lead to a DoS. The bad regular expression is generated any time you have two parameters within a single segment, separated by something that is not a period (.). For users of 0.1, upgrade to 0.1.10. All other users should upgrade to 8.0.0.",
+                "markdown": "**Vulnerability CVE-2024-45296**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|path-to-regexp|1.9.0, 0.1.10, 8.0.0, 3.3.0, 6.3.0|[CVE-2024-45296](https://avd.aquasec.com/nvd/cve-2024-45296)|\n\npath-to-regexp turns path strings into a regular expressions. In certain cases, path-to-regexp will output a regular expression that can be exploited to cause poor performance. Because JavaScript is single threaded and regex matching runs on the main thread, poor performance will block the event loop and lead to a DoS. The bad regular expression is generated any time you have two parameters within a single segment, separated by something that is not a period (.). For users of 0.1, upgrade to 0.1.10. All other users should upgrade to 8.0.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-43799",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "send: Code Execution Vulnerability in Send Library"
+              },
+              "fullDescription": {
+                "text": "Send is a library for streaming files from the file system as a http response. Send passes untrusted user input to SendStream.redirect() which executes untrusted code. This issue is patched in send 0.19.0."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-43799",
+              "help": {
+                "text": "Vulnerability CVE-2024-43799\nSeverity: MEDIUM\nPackage: send\nFixed Version: 0.19.0\nLink: [CVE-2024-43799](https://avd.aquasec.com/nvd/cve-2024-43799)\nSend is a library for streaming files from the file system as a http response. Send passes untrusted user input to SendStream.redirect() which executes untrusted code. This issue is patched in send 0.19.0.",
+                "markdown": "**Vulnerability CVE-2024-43799**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|send|0.19.0|[CVE-2024-43799](https://avd.aquasec.com/nvd/cve-2024-43799)|\n\nSend is a library for streaming files from the file system as a http response. Send passes untrusted user input to SendStream.redirect() which executes untrusted code. This issue is patched in send 0.19.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-43800",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "serve-static: Improper Sanitization in serve-static"
+              },
+              "fullDescription": {
+                "text": "serve-static serves static files. serve-static passes untrusted user input - even after sanitizing it - to redirect() may execute untrusted code. This issue is patched in serve-static 1.16.0."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-43800",
+              "help": {
+                "text": "Vulnerability CVE-2024-43800\nSeverity: MEDIUM\nPackage: serve-static\nFixed Version: 1.16.0, 2.1.0\nLink: [CVE-2024-43800](https://avd.aquasec.com/nvd/cve-2024-43800)\nserve-static serves static files. serve-static passes untrusted user input - even after sanitizing it - to redirect() may execute untrusted code. This issue is patched in serve-static 1.16.0.",
+                "markdown": "**Vulnerability CVE-2024-43800**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|serve-static|1.16.0, 2.1.0|[CVE-2024-43800](https://avd.aquasec.com/nvd/cve-2024-43800)|\n\nserve-static serves static files. serve-static passes untrusted user input - even after sanitizing it - to redirect() may execute untrusted code. This issue is patched in serve-static 1.16.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            }
+          ],
+          "version": "0.56.1"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2021-36084",
+          "ruleIndex": 0,
+          "level": "note",
+          "message": {
+            "text": "Package: libsepol1\nInstalled Version: 3.1-1\nVulnerability CVE-2021-36084\nSeverity: LOW\nFixed Version: 3.1-1+deb11u1\nLink: [CVE-2021-36084](https://avd.aquasec.com/nvd/cve-2021-36084)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: libsepol1@3.1-1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-36085",
+          "ruleIndex": 1,
+          "level": "note",
+          "message": {
+            "text": "Package: libsepol1\nInstalled Version: 3.1-1\nVulnerability CVE-2021-36085\nSeverity: LOW\nFixed Version: 3.1-1+deb11u1\nLink: [CVE-2021-36085](https://avd.aquasec.com/nvd/cve-2021-36085)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: libsepol1@3.1-1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-36086",
+          "ruleIndex": 2,
+          "level": "note",
+          "message": {
+            "text": "Package: libsepol1\nInstalled Version: 3.1-1\nVulnerability CVE-2021-36086\nSeverity: LOW\nFixed Version: 3.1-1+deb11u1\nLink: [CVE-2021-36086](https://avd.aquasec.com/nvd/cve-2021-36086)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: libsepol1@3.1-1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-36087",
+          "ruleIndex": 3,
+          "level": "note",
+          "message": {
+            "text": "Package: libsepol1\nInstalled Version: 3.1-1\nVulnerability CVE-2021-36087\nSeverity: LOW\nFixed Version: 3.1-1+deb11u1\nLink: [CVE-2021-36087](https://avd.aquasec.com/nvd/cve-2021-36087)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: libsepol1@3.1-1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-16156",
+          "ruleIndex": 4,
+          "level": "error",
+          "message": {
+            "text": "Package: perl-base\nInstalled Version: 5.32.1-4+deb11u3\nVulnerability CVE-2020-16156\nSeverity: HIGH\nFixed Version: 5.32.1-4+deb11u4\nLink: [CVE-2020-16156](https://avd.aquasec.com/nvd/cve-2020-16156)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: perl-base@5.32.1-4+deb11u3"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-31484",
+          "ruleIndex": 5,
+          "level": "error",
+          "message": {
+            "text": "Package: perl-base\nInstalled Version: 5.32.1-4+deb11u3\nVulnerability CVE-2023-31484\nSeverity: HIGH\nFixed Version: 5.32.1-4+deb11u4\nLink: [CVE-2023-31484](https://avd.aquasec.com/nvd/cve-2023-31484)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: perl-base@5.32.1-4+deb11u3"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-45590",
+          "ruleIndex": 6,
+          "level": "error",
+          "message": {
+            "text": "Package: body-parser\nInstalled Version: 1.20.2\nVulnerability CVE-2024-45590\nSeverity: HIGH\nFixed Version: 1.20.3\nLink: [CVE-2024-45590](https://avd.aquasec.com/nvd/cve-2024-45590)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/node_modules/body-parser/package.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "app/node_modules/body-parser/package.json: body-parser@1.20.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-47764",
+          "ruleIndex": 7,
+          "level": "note",
+          "message": {
+            "text": "Package: cookie\nInstalled Version: 0.6.0\nVulnerability CVE-2024-47764\nSeverity: LOW\nFixed Version: 0.7.0\nLink: [CVE-2024-47764](https://avd.aquasec.com/nvd/cve-2024-47764)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/node_modules/cookie/package.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "app/node_modules/cookie/package.json: cookie@0.6.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-43796",
+          "ruleIndex": 8,
+          "level": "warning",
+          "message": {
+            "text": "Package: express\nInstalled Version: 4.19.2\nVulnerability CVE-2024-43796\nSeverity: MEDIUM\nFixed Version: 4.20.0, 5.0.0\nLink: [CVE-2024-43796](https://avd.aquasec.com/nvd/cve-2024-43796)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/node_modules/express/package.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "app/node_modules/express/package.json: express@4.19.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-45296",
+          "ruleIndex": 9,
+          "level": "error",
+          "message": {
+            "text": "Package: path-to-regexp\nInstalled Version: 0.1.7\nVulnerability CVE-2024-45296\nSeverity: HIGH\nFixed Version: 1.9.0, 0.1.10, 8.0.0, 3.3.0, 6.3.0\nLink: [CVE-2024-45296](https://avd.aquasec.com/nvd/cve-2024-45296)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/node_modules/path-to-regexp/package.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "app/node_modules/path-to-regexp/package.json: path-to-regexp@0.1.7"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-43799",
+          "ruleIndex": 10,
+          "level": "warning",
+          "message": {
+            "text": "Package: send\nInstalled Version: 0.18.0\nVulnerability CVE-2024-43799\nSeverity: MEDIUM\nFixed Version: 0.19.0\nLink: [CVE-2024-43799](https://avd.aquasec.com/nvd/cve-2024-43799)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/node_modules/send/package.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "app/node_modules/send/package.json: send@0.18.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-43800",
+          "ruleIndex": 11,
+          "level": "warning",
+          "message": {
+            "text": "Package: serve-static\nInstalled Version: 1.15.0\nVulnerability CVE-2024-43800\nSeverity: MEDIUM\nFixed Version: 1.16.0, 2.1.0\nLink: [CVE-2024-43800](https://avd.aquasec.com/nvd/cve-2024-43800)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/node_modules/serve-static/package.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "app/node_modules/serve-static/package.json: serve-static@1.15.0"
+              }
+            }
+          ]
+        }
+      ],
+      "columnKind": "utf16CodeUnits",
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///"
+        }
+      },
+      "properties": {
+        "imageID": "sha256:3da236162c59bdd5e5ac77a64b811ed8d9b43be6faaeb4b6759854bfea18a032",
+        "imageName": "panchanandevops/express-ts-api:v3.0.7",
+        "repoDigests": [
+          "panchanandevops/express-ts-api@sha256:5904caa2c5a880fd80f43f04de7249c79de77e9995103beaab47bc9686e8c179"
+        ],
+        "repoTags": [
+          "panchanandevops/express-ts-api:v3.0.7"
+        ]
+      }
+    }
+  ]
+}
