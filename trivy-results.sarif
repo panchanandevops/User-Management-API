@@ -118,6 +118,32 @@
               }
             },
             {
+              "id": "DLA-3942-2",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "openssl - regression update"
+              },
+              "fullDescription": {
+                "text": "openssl - regression update"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "help": {
+                "text": "Vulnerability DLA-3942-2\nSeverity: UNKNOWN\nPackage: libssl1.1\nFixed Version: 1.1.1w-0+deb11u2\nLink: [DLA-3942-2]()\n",
+                "markdown": "**Vulnerability DLA-3942-2**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|libssl1.1|1.1.1w-0+deb11u2|[DLA-3942-2]()|\n\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "0.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "UNKNOWN"
+                ]
+              }
+            },
+            {
               "id": "CVE-2020-16156",
               "name": "OsPackageVulnerability",
               "shortDescription": {
@@ -447,8 +473,35 @@
           ]
         },
         {
-          "ruleId": "CVE-2020-16156",
+          "ruleId": "DLA-3942-2",
           "ruleIndex": 4,
+          "level": "note",
+          "message": {
+            "text": "Package: libssl1.1\nInstalled Version: 1.1.1w-0+deb11u1\nVulnerability DLA-3942-2\nSeverity: UNKNOWN\nFixed Version: 1.1.1w-0+deb11u2\nLink: [DLA-3942-2]()"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "panchanandevops/express-ts-api",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "panchanandevops/express-ts-api: libssl1.1@1.1.1w-0+deb11u1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-16156",
+          "ruleIndex": 5,
           "level": "error",
           "message": {
             "text": "Package: perl-base\nInstalled Version: 5.32.1-4+deb11u3\nVulnerability CVE-2020-16156\nSeverity: HIGH\nFixed Version: 5.32.1-4+deb11u4\nLink: [CVE-2020-16156](https://avd.aquasec.com/nvd/cve-2020-16156)"
@@ -475,7 +528,7 @@
         },
         {
           "ruleId": "CVE-2023-31484",
-          "ruleIndex": 5,
+          "ruleIndex": 6,
           "level": "error",
           "message": {
             "text": "Package: perl-base\nInstalled Version: 5.32.1-4+deb11u3\nVulnerability CVE-2023-31484\nSeverity: HIGH\nFixed Version: 5.32.1-4+deb11u4\nLink: [CVE-2023-31484](https://avd.aquasec.com/nvd/cve-2023-31484)"
@@ -502,7 +555,7 @@
         },
         {
           "ruleId": "CVE-2024-45590",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "level": "error",
           "message": {
             "text": "Package: body-parser\nInstalled Version: 1.20.2\nVulnerability CVE-2024-45590\nSeverity: HIGH\nFixed Version: 1.20.3\nLink: [CVE-2024-45590](https://avd.aquasec.com/nvd/cve-2024-45590)"
@@ -529,7 +582,7 @@
         },
         {
           "ruleId": "CVE-2024-47764",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "level": "note",
           "message": {
             "text": "Package: cookie\nInstalled Version: 0.6.0\nVulnerability CVE-2024-47764\nSeverity: LOW\nFixed Version: 0.7.0\nLink: [CVE-2024-47764](https://avd.aquasec.com/nvd/cve-2024-47764)"
@@ -556,7 +609,7 @@
         },
         {
           "ruleId": "CVE-2024-43796",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "level": "warning",
           "message": {
             "text": "Package: express\nInstalled Version: 4.19.2\nVulnerability CVE-2024-43796\nSeverity: MEDIUM\nFixed Version: 4.20.0, 5.0.0\nLink: [CVE-2024-43796](https://avd.aquasec.com/nvd/cve-2024-43796)"
@@ -583,7 +636,7 @@
         },
         {
           "ruleId": "CVE-2024-45296",
-          "ruleIndex": 9,
+          "ruleIndex": 10,
           "level": "error",
           "message": {
             "text": "Package: path-to-regexp\nInstalled Version: 0.1.7\nVulnerability CVE-2024-45296\nSeverity: HIGH\nFixed Version: 1.9.0, 0.1.10, 8.0.0, 3.3.0, 6.3.0\nLink: [CVE-2024-45296](https://avd.aquasec.com/nvd/cve-2024-45296)"
@@ -610,7 +663,7 @@
         },
         {
           "ruleId": "CVE-2024-43799",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "level": "warning",
           "message": {
             "text": "Package: send\nInstalled Version: 0.18.0\nVulnerability CVE-2024-43799\nSeverity: MEDIUM\nFixed Version: 0.19.0\nLink: [CVE-2024-43799](https://avd.aquasec.com/nvd/cve-2024-43799)"
@@ -637,7 +690,7 @@
         },
         {
           "ruleId": "CVE-2024-43800",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "level": "warning",
           "message": {
             "text": "Package: serve-static\nInstalled Version: 1.15.0\nVulnerability CVE-2024-43800\nSeverity: MEDIUM\nFixed Version: 1.16.0, 2.1.0\nLink: [CVE-2024-43800](https://avd.aquasec.com/nvd/cve-2024-43800)"
@@ -670,13 +723,13 @@
         }
       },
       "properties": {
-        "imageID": "sha256:3da236162c59bdd5e5ac77a64b811ed8d9b43be6faaeb4b6759854bfea18a032",
-        "imageName": "panchanandevops/express-ts-api:v3.0.7",
+        "imageID": "sha256:8cd46856b150caef292431405130519d010d7b8351b2ac812526d985c14ed7e3",
+        "imageName": "panchanandevops/express-ts-api:v3.0.8",
         "repoDigests": [
-          "panchanandevops/express-ts-api@sha256:5904caa2c5a880fd80f43f04de7249c79de77e9995103beaab47bc9686e8c179"
+          "panchanandevops/express-ts-api@sha256:efbfbba1f501a5b34ab7d53806526b15b5285e53e76e3052a28e4a9aaf220a41"
         ],
         "repoTags": [
-          "panchanandevops/express-ts-api:v3.0.7"
+          "panchanandevops/express-ts-api:v3.0.8"
         ]
       }
     }
